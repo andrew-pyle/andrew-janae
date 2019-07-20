@@ -1,0 +1,22 @@
+{
+  "name": "andrew-janae",
+  "version": "1.0.0",
+  "description": "Janae's Anniversary Present 2019",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrew-pyle/andrew-janae.git"
+  },
+  "author": "Andrew Pyle",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrew-pyle/andrew-janae/issues"
+  },
+  "homepage": "https://github.com/andrew-pyle/andrew-janae#readme",
+  "devDependencies": {
+    "serve": "^11.1.0"
+  }
+}
