@@ -4,6 +4,7 @@
   "description": "Janae's Anniversary Present 2019",
   "main": "index.html",
   "scripts": {
+    "start" : "serve",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
