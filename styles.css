@@ -59,3 +59,24 @@ html {
     display: none;
   }
 }
+
+.animate-heartbeat {
+  animation: heartbeat 2s infinite;
+}
+@keyframes heartbeat {
+  0%,
+  10%,
+  60%,
+  70%,
+  100% {
+    font-size: 80%;
+  }
+  20%,
+  50% {
+    font-size: 100%;
+  }
+  30%,
+  40% {
+    font-size: 90%;
+  }
+}
