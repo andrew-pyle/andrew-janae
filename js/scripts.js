@@ -4,5 +4,4 @@ const startDate = new Date(2016, 6, 22).getTime();
 const currentDate = new Date().getTime();
 const naturalLanguageString = getNaturalLanguageRange(startDate, currentDate);
 
-const calculatedRange = document.querySelector("#calculated-range");
-calculatedRange.textContent = naturalLanguageString;
+document.querySelector("#calculated-range").textContent = naturalLanguageString;
