@@ -66,6 +66,8 @@ html {
   animation: heartbeat 1.7s cubic-bezier(0.5, 0, 1, 0.5) infinite;
 }
 @keyframes heartbeat {
+  /* o---O---o---O---o---o
+     0  20  40  60  80  100 */
   0%,
   40%,
   60%,
