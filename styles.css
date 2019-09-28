@@ -25,6 +25,13 @@ h1 {
   }
 }
 
+/* Tablet */
+@media only screen and (min-device-width: 768px) {
+  body {
+    font-size: 2rem;
+  }
+}
+
 /* Laptop */
 @media only screen and (min-device-width: 1024px) {
   body {
@@ -45,7 +52,7 @@ h1 {
 /* iPhone 5s portrait */
 .box {
   width: 70%;
-  max-width: 700px;
+  max-width: 600px;
   text-align: center;
   background-color: var(--dark);
   border: 5px var(--dark) solid;
@@ -55,8 +62,8 @@ h1 {
 }
 
 /* Wide enough to show emoji headline without linebreaks */
-@media screen and (min-device-width: 568px) {
-  .box h1 br {
+@media screen and (min-device-width: 450px) {
+  .box br {
     display: none;
   }
 }
