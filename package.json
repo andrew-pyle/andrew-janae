@@ -18,11 +18,11 @@
   },
   "homepage": "https://github.com/andrew-pyle/andrew-janae#readme",
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "core-js": "^3.2.0",
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "core-js": "^3.2.1",
     "prettier": "1.18.2",
-    "serve": "^11.1.0"
+    "serve": "^11.2.0"
   }
 }
