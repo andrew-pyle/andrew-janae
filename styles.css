@@ -26,14 +26,14 @@ h1 {
 }
 
 /* Tablet */
-@media only screen and (min-device-width: 768px) {
+@media only screen and (min-width: 768px) {
   body {
     font-size: 2rem;
   }
 }
 
 /* Laptop */
-@media only screen and (min-device-width: 1024px) {
+@media only screen and (min-width: 1024px) {
   body {
     font-size: 1.25rem;
   }
@@ -62,7 +62,7 @@ h1 {
 }
 
 /* Wide enough to show emoji headline without linebreaks */
-@media screen and (min-device-width: 450px) {
+@media screen and (min-width: 450px) {
   .headline-linebreak br {
     display: none;
   }
