@@ -1,46 +1,29 @@
-html {
-  --dark: #2b2b2b;
-  --accent: rosybrown;
-  --light: white;
-}
-
 /* ======= Typography ======= */
-body {
-  margin: 0;
-  background-color: var(--accent);
-  font-size: 3.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+
+html {
+  --color-dark: #2b2b2b;
+  --color-accent: rosybrown;
+  --color-light: white;
+  --font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: white;
 }
 
-h1 {
-  font-size: 2em;
+body {
+  font-family: var(--font-stack);
+  background: var(--color-accent);
 }
 
-/* Landscape devices */
-@media only screen and (orientation: landscape) {
-  body {
-    font-size: 2rem;
-  }
-}
-
-/* Tablet */
-@media only screen and (min-width: 768px) {
-  body {
-    font-size: 2rem;
-  }
-}
-
-/* Laptop */
-@media only screen and (min-width: 1024px) {
+/* Scale up Type size for larger screens */
+@media (min-width: 400px) {
   body {
     font-size: 1.25rem;
   }
 }
 
-.text-image {
-  width: 1em;
+main {
+  background: var(--color-dark);
+  color: var(--color-light);
+  text-align: center;
 }
 
 #calculated-range {
@@ -49,23 +32,26 @@ h1 {
 
 /* ======= Layout ======= */
 
-/* iPhone 5s portrait */
-.main {
-  width: 70%;
-  max-width: 700px;
-  text-align: center;
-  background-color: var(--dark);
-  border: 5px var(--dark) solid;
-  border-radius: 15px;
-  padding: 2rem;
-  margin: 2em auto;
+body {
+  margin: 0;
 }
 
-/* Wide enough to show emoji headline without linebreaks */
-@media screen and (min-width: 450px) {
-  .headline-linebreak br {
-    display: none;
-  }
+h1 {
+  margin: 0;
+}
+
+main {
+  margin: 2em auto;
+  width: 70%;
+  min-width: 200px;
+  max-width: 500px;
+  border-radius: 15px;
+  padding: 1em;
+}
+
+/* Scale Heart size with font size */
+.text-image {
+  width: 3em;
 }
 
 /* ======= Animation ======= */
@@ -75,7 +61,7 @@ h1 {
 }
 @keyframes heartbeat {
   /* o---O---o---O---o---o
-     0  20  40  60  80  100 */
+       0  20  40  60  80  100 */
   0%,
   40%,
   60%,
