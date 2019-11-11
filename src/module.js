@@ -38,4 +38,5 @@ TODO
 4. Make show/hide play & quit buttons not dependent on knowledge of their
    selectors. Similar problem as #3 above
 5. Work on build and dev workflow. Need to run babel and serve concurrently?
+6. Research adapting MIT licensed code
 */
