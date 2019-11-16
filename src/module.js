@@ -29,8 +29,6 @@ quitSnakeButton.addEventListener("click", () => {
 
 /*
 TODO
-1. Use container to constrain entire body content, instead of separate
-   main & snake sections with independent widths
 2. Calculate snake game sizing so it can be responsive/will work on iPhone
 3. Make snake game return a reference to the canvas element so we can avoid
    DOM manipulations based on global knowledge & query selectors
@@ -38,5 +36,4 @@ TODO
 4. Make show/hide play & quit buttons not dependent on knowledge of their
    selectors. Similar problem as #3 above
 5. Work on build and dev workflow. Need to run babel and serve concurrently?
-6. Research adapting MIT licensed code
 */

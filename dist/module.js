@@ -25,8 +25,6 @@ quitSnakeButton.addEventListener("click", () => {
 });
 /*
 TODO
-1. Use container to constrain entire body content, instead of separate
-   main & snake sections with independent widths
 2. Calculate snake game sizing so it can be responsive/will work on iPhone
 3. Make snake game return a reference to the canvas element so we can avoid
    DOM manipulations based on global knowledge & query selectors
