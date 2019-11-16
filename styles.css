@@ -44,6 +44,8 @@ body {
 
 .container {
   text-align: center;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 h1 {
@@ -74,7 +76,6 @@ main {
   flex-direction: row;
   justify-content: flex-end;
   width: var(--content-width);
-  margin: 0 auto;
 }
 
 .btn {
