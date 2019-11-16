@@ -19,28 +19,30 @@
   </head>
 
   <body>
-    <main>
-      <h1 class="headline-linebreak">
-        Andrew
-      </h1>
-      <img
-        class="text-image animate-heartbeat"
-        src="img/pixel-heart.png"
-        alt="heart drawn with pixels"
-      />
-      <h1>Janae</h1>
-      <p>
-        By now, we have been married for
-        <span id="calculated-range">_____</span>.
-      </p>
-      <h1>That's great!</h1>
-    </main>
-    <div class="snake">
-      <div class="snake-controls">
-        <button class="btn btn-start-snake">Play Snake!</button>
-        <button class="btn btn-quit-snake hidden">✖</button>
+    <div class="container">
+      <main>
+        <h1 class="headline-linebreak">
+          Andrew
+        </h1>
+        <img
+          class="text-image animate-heartbeat"
+          src="img/pixel-heart.png"
+          alt="heart drawn with pixels"
+        />
+        <h1>Janae</h1>
+        <p>
+          By now, we have been married for
+          <span id="calculated-range">_____</span>.
+        </p>
+        <h1>That's great!</h1>
+      </main>
+      <div class="snake">
+        <div class="snake-controls">
+          <button class="btn btn-start-snake">Play Snake!</button>
+          <button class="btn btn-quit-snake hidden">✖</button>
+        </div>
+        <div class="snake-game"></div>
       </div>
-      <div class="snake-game"></div>
     </div>
     <script type="module" src="dist/module.js"></script>
   </body>

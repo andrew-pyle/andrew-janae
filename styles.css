@@ -25,7 +25,6 @@ body {
 main {
   background: var(--color-dark);
   color: var(--color-light);
-  text-align: center;
 }
 
 #calculated-range {
@@ -41,6 +40,10 @@ main {
 
 body {
   margin: 0;
+}
+
+.container {
+  text-align: center;
 }
 
 h1 {
@@ -61,7 +64,7 @@ main {
   width: 3em;
 }
 
-/* Snake Game */
+/* ======= Snake Game ======= */
 .snake {
   text-align: center;
 }
@@ -108,7 +111,7 @@ main {
 }
 @keyframes heartbeat {
   /* o---O---o---O---o---o
-       0  20  40  60  80  100 */
+     0  20  40  60  80  100 */
   0%,
   40%,
   60%,
