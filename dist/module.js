@@ -31,5 +31,4 @@ TODO
    e.g. document.querySelector(".snake-game canvas").focus();
 4. Make show/hide play & quit buttons not dependent on knowledge of their
    selectors. Similar problem as #3 above
-5. Work on build and dev workflow. Need to run babel and serve concurrently?
 */
