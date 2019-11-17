@@ -1,10 +1,13 @@
-import { getNaturalLanguageRange } from "./natural-lang-date-range.js";
+import { createNaturalLanguageDuration } from "./NaturalDuration.bs.js";
 import { createSnakeGame } from "./snake.js";
 
 // Get Natural language date range
 const startDate = new Date(2016, 6, 22).getTime();
 const currentDate = new Date().getTime();
-const naturalLanguageString = getNaturalLanguageRange(startDate, currentDate);
+const naturalLanguageString = createNaturalLanguageDuration(
+  startDate,
+  currentDate
+);
 document.querySelector("#calculated-range").textContent = naturalLanguageString;
 
 /* ========= Snake Game ========= */
