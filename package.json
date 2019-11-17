@@ -23,6 +23,7 @@
     "@babel/cli": "^7.6.2",
     "@babel/core": "^7.6.2",
     "@babel/preset-env": "^7.6.2",
+    "bs-platform": "^5.2.1",
     "concurrently": "^5.0.0",
     "core-js": "^3.2.1",
     "prettier": "1.18.2",
