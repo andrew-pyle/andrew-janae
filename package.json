@@ -4,8 +4,9 @@
   "description": "Janae's Anniversary Present 2019",
   "main": "index.html",
   "scripts": {
-    "start": "concurrently 'npm run transpile' 'npm run serve'",
+    "start": "concurrently 'npm run transpile' 'npm run compile:reason' 'npm run serve'",
     "serve": "serve",
+    "compile:reason": "bsb -make-world -w",
     "transpile": "babel src -d dist --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
