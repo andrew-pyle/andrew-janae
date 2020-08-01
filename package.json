@@ -4,10 +4,10 @@
   "description": "Janae's Anniversary Present 2019",
   "main": "index.html",
   "scripts": {
-    "start": "concurrently 'npm run transpile' 'npm run compile:reason' 'npm run serve'",
+    "start": "concurrently 'npm run transpile -- --watch' 'npm run serve'",
     "serve": "serve",
-    "compile:reason": "bsb -make-world -w",
-    "transpile": "babel src -d dist --watch",
+    "transpile": "babel src -d dist",
+    "build": "npm run transpile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,13 +21,13 @@
   },
   "homepage": "https://github.com/andrew-pyle/andrew-janae#readme",
   "devDependencies": {
-    "@babel/cli": "^7.6.2",
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
-    "bs-platform": "^5.2.1",
-    "concurrently": "^5.0.0",
-    "core-js": "^3.2.1",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
+    "concurrently": "^5.2.0",
+    "core-js": "^3.6.5",
     "prettier": "1.18.2",
-    "serve": "^11.2.0"
-  }
+    "serve": "^11.3.2"
+  },
+  "dependencies": {}
 }

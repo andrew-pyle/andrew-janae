@@ -1,61 +1,21 @@
-var MONTHS_IN_YEAR = 12;
-var MILLISECS_IN_YEAR = 1000 * 60 * 60 * 24 * 365;
+import { intervalToDuration, formatDuration } from "https://cdn.skypack.dev/date-fns";
 /**
- * Returns a string describing the approximate time in years and months between two dates
- * @param {number} startDate milliseconds since UNIX epoch of start date
- * @param {number} endDate milliseconds since UNIX epoch of end date
+ * Converts a start date & end date into a description in English
+ * @param {{start: number, end: number}} interval The date interval to convert into a description in natural language
+ * @returns {string} Description of the duration in English
  */
 
-function getNaturalLanguageRange(startDate, endDate) {
-  var differenceInMillisecs = endDate - startDate;
-  var differenceInYears = differenceInMillisecs / MILLISECS_IN_YEAR;
-  var yearsSinceStartDate = Math.floor(differenceInYears);
-  var monthsRemainderDecimal = differenceInYears - yearsSinceStartDate;
-  var monthsRemainderInteger = Math.round(MONTHS_IN_YEAR * monthsRemainderDecimal);
-  var roundedYearsSinceStartDate = monthsRemainderInteger < 12 ? yearsSinceStartDate : yearsSinceStartDate + 1;
-  var roundedMonthsRemainderInteger = monthsRemainderInteger < 12 ? monthsRemainderInteger : 0;
-  var naturalLanguageString = buildTimeString(roundedYearsSinceStartDate, roundedMonthsRemainderInteger);
-  return naturalLanguageString;
+export function createNaturalLanguageDuration(_ref) {
+  var {
+    start,
+    end
+  } = _ref;
+  var duration = intervalToDuration({
+    start,
+    end
+  });
+  var dateString = formatDuration(duration, {
+    format: ["years", "months"]
+  });
+  return dateString;
 }
-/**
- * Builds natural language statement of years and months. Plurals are handled.
- * @param {number} years Number of years to include in string
- * @param {number|null} months Number of months to include in string. Null if none.
- */
-
-
-function buildTimeString(years, months) {
-  var yearUnits = pluralTimeWord("year", years);
-  var monthUnits = pluralTimeWord("month", months); // Include months if we have them
-
-  if (months && months > 0) {
-    return "".concat(years, " ").concat(yearUnits, " & ").concat(months, " ").concat(monthUnits);
-  } // No months
-  else {
-      return "".concat(years, " ").concat(yearUnits);
-    }
-}
-/**
- * Pluralizes time words properly. Accepts month and year only.
- * @param {string} period Time word: month or year
- * @param {number} number quantity of period
- */
-
-
-function pluralTimeWord(period, number) {
-  switch (period) {
-    case "year":
-      return number === 1 ? "year" : "years";
-
-    case "month":
-      return number === 1 ? "month" : "months";
-
-    case "day":
-      return number === 1 ? "day" : "days";
-
-    default:
-      return "";
-  }
-}
-
-export { getNaturalLanguageRange };
