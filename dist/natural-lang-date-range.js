@@ -1,4 +1,4 @@
-import { intervalToDuration, formatDuration } from "https://cdn.skypack.dev/date-fns";
+import { intervalToDuration, formatDuration } from "https://cdn.skypack.dev/pin/date-fns@v2.16.1-kiAGbZM0AiQ3q2YJfvfc/min/date-fns.js";
 /**
  * Converts a start date & end date into a description in English
  * @param {{start: number, end: number}} interval The date interval to convert into a description in natural language
