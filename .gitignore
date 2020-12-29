@@ -11,3 +11,6 @@ lib/
 
 # Parcel
 .cache
+
+# macOS
+.DS_Store
