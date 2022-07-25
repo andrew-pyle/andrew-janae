@@ -4,7 +4,8 @@
   "description": "Janae's Anniversary Present 2019",
   "main": "index.html",
   "scripts": {
-    "start": "serve public/",
+    "dev": "vite",
+    "build": "vite build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,8 +25,5 @@
   "dependencies": {
     "date-fns": "^2.16.1",
     "vite": "^3.0.3"
-  },
-  "scripts": {
-    "build": "vite build"
   }
 }
