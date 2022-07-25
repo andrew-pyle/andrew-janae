@@ -14,3 +14,6 @@ lib/
 
 # macOS
 .DS_Store
+
+# Dist
+dist/
